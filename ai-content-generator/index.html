@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Content Generator - Create Viral Posts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 AI Content Generator</h1>
+            <p>Generate viral social media content in seconds!</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Input Form -->
+            <div class="form-section">
+                <h2>Create Your Content</h2>
+                
+                <div class="form-group">
+                    <label for="niche">📌 Niche/Tema:</label>
+                    <select id="niche">
+                        <option value="">-- Pilih Tema --</option>
+                        <option value="Food & Beverage">🍔 Food & Beverage</option>
+                        <option value="Fashion">👗 Fashion</option>
+                        <option value="Technology">💻 Technology</option>
+                        <option value="Travel">✈️ Travel</option>
+                        <option value="Fitness">💪 Fitness</option>
+                        <option value="Beauty">💄 Beauty</option>
+                        <option value="Business">💼 Business</option>
+                        <option value="Education">📚 Education</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="platform">📱 Platform:</label>
+                    <select id="platform">
+                        <option value="Instagram">📸 Instagram</option>
+                        <option value="TikTok">🎵 TikTok</option>
+                        <option value="Twitter">𝕏 Twitter/X</option>
+                        <option value="LinkedIn">💼 LinkedIn</option>
+                        <option value="Facebook">👥 Facebook</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">🎨 Tone/Style:</label>
+                    <select id="tone">
+                        <option value="casual and funny">😄 Casual & Funny</option>
+                        <option value="professional">💼 Professional</option>
+                        <option value="inspirational">✨ Inspirational</option>
+                        <option value="educational">📚 Educational</option>
+                        <option value="mix of casual and professional">🎭 Mix</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalDetails">✍️ Additional Details (Optional):</label>
+                    <textarea id="additionalDetails" placeholder="Tambahkan detail khusus, hashtag, atau instruksi lainnya..."></textarea>
+                </div>
+
+                <button id="generateBtn" class="btn-primary">✨ Generate Content</button>
+            </div>
+
+            <!-- Output Section -->
+            <div class="output-section">
+                <h2>Generated Content</h2>
+                <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+                <div id="outputContent" class="output-box">
+                    <p>Content akan muncul di sini...</p>
+                </div>
+                <button id="copyBtn" class="btn-secondary" style="display: none;">📋 Copy to Clipboard</button>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <h3>💡 Tips:</h3>
+            <ul>
+                <li>Setiap content di-generate dengan AI, pastikan review sebelum post</li>
+                <li>Tambah hashtag relevan untuk reach yang lebih baik</li>
+                <li>Sesuaikan tone dan style sesuai brand kamu</li>
+                <li>Generate berkali-kali untuk mendapat variasi</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
